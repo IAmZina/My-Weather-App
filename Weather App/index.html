@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="weather-container">
+        <div class="btn-container">
+            <input type="text" id="city-input" class="search-bar" placeholder="Enter your city">
+            <i class="fas fa-search"></i>
+            <input type="submit" value="Search" class="btn btn-primary"></input>
+        </div>
+        <div class="today-info">
+            <h1 id="city"></h1>
+            <ul>
+                <li>Last updated:
+                    <span id="date">
+                    </span>
+                </li>
+                <li id="conditions">
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-6">
+                    <div class="clearfix weather-temperature">
+                        <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="light rain" id="icon"
+                            class="float-left">
+                        <div class="float-left">
+                            <strong id="temperature"></strong>
+                            <span class="units">
+                                <a href="#" id="celsius-link" class="active">°C</a>
+                                |
+                                <a href="#" id="fahrenheit-link">°F</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <ul>
+                    <li>Humidity: <span id="humidity"></span> %
+                    </li>
+                    <li>Wind: <span id="wind"></span> km/h
+                    </li>
+            </div>
+        </div>
+    </div>
+    <small>
+        <a href="http://github.com/IAmZina/my-weather-app/tree/main" target="_blank">
+            Open-sourced coded</a>
+        by Zinakho Msele
+    </small>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
